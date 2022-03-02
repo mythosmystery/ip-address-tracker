@@ -1,17 +1,16 @@
 <template lang="pug">
-    h1.page-header
+    h1.text-heading
         slot
 </template>
 <script>
 export default {
-  name: 'page-header'
+  name: 'text-heading'
 }
 </script>
 <style lang="scss" scoped>
-.page-header {
+.text-heading {
   font-size: 2rem;
   color: white;
-  position: fixed;
   width: 100vw;
 }
 </style>

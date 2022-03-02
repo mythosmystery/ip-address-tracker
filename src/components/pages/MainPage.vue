@@ -1,6 +1,6 @@
 <template lang="pug">
     column-container
-      page-header IP Address Checker
+      search-header
       background-image  
       map-leaflet 
 </template>
@@ -8,7 +8,7 @@
 import MapLeaflet from '../molecules/Map.vue'
 import BackgroundImage from '../atoms/BackgroundImage.vue'
 import ColumnContainer from '../atoms/ColumnContainer.vue'
-import PageHeader from '../atoms/PageHeader.vue'
+import SearchHeader from '../organisms/SearchHeader.vue'
 
 export default {
   name: 'main-page',
@@ -16,7 +16,7 @@ export default {
     MapLeaflet,
     BackgroundImage,
     ColumnContainer,
-    PageHeader
+    SearchHeader
   }
 }
 </script>

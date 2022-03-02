@@ -10,8 +10,10 @@ export default {
 
 <style scoped>
 img {
-  height: 33vh;
+  height: 35vh;
   width: 100vw;
   object-fit: cover;
+  position: fixed;
+  z-index: 0;
 }
 </style>
