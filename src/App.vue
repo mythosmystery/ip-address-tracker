@@ -1,15 +1,15 @@
 <template lang="pug">
   #app
-    map-leaflet
+    main-page   
 </template>
 
 <script>
-import MapLeaflet from './components/molecules/Map.vue'
+import MainPage from './components/pages/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    MapLeaflet
+    MainPage
   }
 }
 </script>
