@@ -28,12 +28,15 @@ export default {
 #break {
   height: 5rem;
   border-right: 1px solid lightgray;
+  @media (max-width: 980px) {
+    border: none;
+  }
 }
 #info-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem 0 2rem;
+  padding: 0 5rem 0 5rem;
   position: relative;
   background: white;
   border-radius: 20px;
@@ -44,6 +47,8 @@ export default {
   @media (max-width: 980px) {
     flex-direction: column;
     width: 85%;
+    height: 100%;
+    padding: 2rem 0 2rem 0;
   }
 }
 </style>

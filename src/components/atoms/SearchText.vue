@@ -17,7 +17,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 input {
-  font-size: 1.2rem;
+  font-size: 18px;
   width: 100%;
   outline: none;
   border: none;

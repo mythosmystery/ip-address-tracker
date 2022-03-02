@@ -18,7 +18,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: hsl(0, 0%, 17%);
   color: white;
   padding: 1rem 1.25rem;
   border-radius: 0 15px 15px 0;

@@ -26,6 +26,9 @@ export default {
           console.log({ ...this.$store.state.data })
         })
     }
+  },
+  mounted() {
+    this.onSubmit()
   }
 }
 </script>

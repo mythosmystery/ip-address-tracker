@@ -19,13 +19,18 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: start;
+  @media (max-width: 980px) {
+    text-align: center;
+  }
 }
 p {
-  color: lightgrey;
+  color: hsl(0, 0%, 59%);
   margin: 0;
+  font-weight: 400;
 }
 h2 {
   margin: 0.5rem 0;
-  word-break: break-all;
+  font-weight: 700;
+  color: hsl(0, 0%, 17%);
 }
 </style>
