@@ -7,6 +7,7 @@
 <script>
 import SearchIcon from '../atoms/SearchIcon.vue'
 import SearchText from '../atoms/SearchText.vue'
+import axios from 'axios'
 
 export default {
   name: 'search-bar',
@@ -16,7 +17,14 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(this.$store.state.searchText)
+      axios
+        .get(
+          `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.VUE_APP_APIKEY}&domain=${this.$store.state.searchText}`
+        )
+        .then(({ data }) => {
+          this.$store.dispatch('data/setData', { data })
+          console.log({ ...this.$store.state.data })
+        })
     }
   }
 }

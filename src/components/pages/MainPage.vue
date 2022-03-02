@@ -5,7 +5,7 @@
       map-leaflet 
 </template>
 <script>
-import MapLeaflet from '../molecules/Map.vue'
+import MapLeaflet from '../organisms/Map.vue'
 import BackgroundImage from '../atoms/BackgroundImage.vue'
 import ColumnContainer from '../atoms/ColumnContainer.vue'
 import SearchHeader from '../organisms/SearchHeader.vue'
