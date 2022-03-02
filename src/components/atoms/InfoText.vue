@@ -29,7 +29,7 @@ p {
   font-weight: 400;
 }
 h2 {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   font-weight: 700;
   color: hsl(0, 0%, 17%);
 }
