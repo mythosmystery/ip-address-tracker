@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log('submitted')
+      console.log(this.$store.state.searchText)
     }
   }
 }
