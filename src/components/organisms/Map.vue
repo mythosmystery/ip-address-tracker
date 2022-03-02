@@ -1,5 +1,5 @@
 <template lang="pug">
-    l-map(style="height: 66vh; width: 100vw;" :zoom="zoom" :center="center")
+    l-map#map-container(:zoom="zoom" :center="center")
       l-tile-layer(:url="url" :attribution="attribution" )
       l-marker(v-if="showMarker" :lat-lng="center")
 </template>
@@ -36,3 +36,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#map-container {
+  width: 100vw;
+  height: 75vh;
+  z-index: 0;
+}
+</style>

@@ -19,7 +19,7 @@ export default {
     onSubmit() {
       axios
         .get(
-          `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.VUE_APP_APIKEY}&domain=${this.$store.state.searchText}`
+          `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.VUE_APP_APIKEY}&ipAddress=${this.$store.state.searchText}&domain=${this.$store.state.searchText}`
         )
         .then(({ data }) => {
           this.$store.dispatch('data/setData', { data })
