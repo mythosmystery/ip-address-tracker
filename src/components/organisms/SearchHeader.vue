@@ -5,7 +5,7 @@
 </template>
 <script>
 import TextHeading from '../atoms/TextHeading.vue'
-import SearchBar from '../atoms/SearchBar.vue'
+import SearchBar from '../molecules/SearchBar.vue'
 
 export default {
   name: 'search-header',

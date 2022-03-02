@@ -3,19 +3,17 @@
 </template>
 <script>
 export default {
-  name: 'search-bar',
+  name: 'search-text',
   data: () => ({ search: '' })
 }
 </script>
 <style lang="scss" scoped>
 input {
-  padding: 1rem;
-  border-radius: 15px;
-  border: 0px;
-  width: 80%;
   font-size: 1.2rem;
-  @media (min-width: 768px) {
-    width: 30%;
-  }
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  padding: 1rem;
 }
 </style>
