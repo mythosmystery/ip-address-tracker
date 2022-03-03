@@ -25,6 +25,6 @@ input {
   outline: none;
   border: none;
   border-radius: 15px 0 0 15px;
-  padding: 1rem;
+  padding: 1.5vh;
 }
 </style>

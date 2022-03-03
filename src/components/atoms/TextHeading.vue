@@ -11,7 +11,7 @@ export default {
 
 <style lang="scss" scoped>
 .text-heading {
-  font-size: 2rem;
+  font-size: 3vh;
   color: white;
   width: 100vw;
 }

@@ -29,27 +29,30 @@ export default {
   height: 5rem;
   margin: 0 1rem;
   border-right: 1px solid lightgray;
+
   @media (max-width: 980px) {
     border: none;
   }
 }
 #info-container {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 2rem;
-  position: relative;
-  background: white;
-  border-radius: 20px;
-  width: 70%;
-  z-index: 10;
   height: 12rem;
-  margin: 5rem auto;
+  width: 70%;
+  padding: 0 2rem;
+  margin: 5vh auto;
+  border-radius: 20px;
+  background: white;
+
   @media (max-width: 980px) {
     flex-direction: column;
     width: 85%;
     height: 100%;
     padding: 2rem 0;
+    margin: 3vh auto;
   }
 }
 </style>
