@@ -1,13 +1,13 @@
 <template lang="pug">
-    column-container
+    #column-container
       search-header
       background-image  
       map-leaflet 
 </template>
+
 <script>
 import MapLeaflet from '../organisms/Map.vue'
 import BackgroundImage from '../atoms/BackgroundImage.vue'
-import ColumnContainer from '../atoms/ColumnContainer.vue'
 import SearchHeader from '../organisms/SearchHeader.vue'
 
 export default {
@@ -15,8 +15,14 @@ export default {
   components: {
     MapLeaflet,
     BackgroundImage,
-    ColumnContainer,
     SearchHeader
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#column-container {
+  display: flex;
+  flex-direction: column;
+}
+</style>

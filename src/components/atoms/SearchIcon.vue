@@ -9,6 +9,7 @@ export default {
   name: 'search-icon'
 }
 </script>
+
 <style lang="scss" scoped>
 button {
   border: none;

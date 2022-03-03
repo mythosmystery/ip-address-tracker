@@ -4,6 +4,7 @@
         search-bar
         info-container
 </template>
+
 <script>
 import TextHeading from '../atoms/TextHeading.vue'
 import SearchBar from '../molecules/SearchBar.vue'
@@ -18,6 +19,7 @@ export default {
   }
 }
 </script>
+
 <style lang="scss" scoped>
 #header-container {
   position: relative;

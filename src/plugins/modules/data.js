@@ -32,9 +32,11 @@ const mutations = {
 }
 
 const getLocationString = location => {
-  return location.postalCode
-    ? `${location.city}, ${location.region}, ${location.postalCode}`
-    : `${location.city}, ${location.region}`
+  if (location.postalCode) {
+    return `${location.city}, ${location.region}, ${location.postalCode}`
+  } else {
+    return location.region ? `${location.city}, ${location.region}` : location.city
+  }
 }
 
 export default {

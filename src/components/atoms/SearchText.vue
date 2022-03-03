@@ -5,16 +5,19 @@
 <script>
 export default {
   name: 'search-text',
-  data() {
-    return { search: '' }
-  },
-  watch: {
-    search() {
-      this.$store.dispatch('setSearch', { text: this.search })
+  computed: {
+    search: {
+      get() {
+        return this.$store.state.searchText
+      },
+      set(newValue) {
+        this.$store.dispatch('setSearch', { text: newValue })
+      }
     }
   }
 }
 </script>
+
 <style lang="scss" scoped>
 input {
   font-size: 18px;

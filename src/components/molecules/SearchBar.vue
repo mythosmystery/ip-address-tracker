@@ -1,5 +1,5 @@
 <template lang="pug">
-        form#search-container(@submit.prevent="onSubmit")
+        form#search-container(@submit.prevent="getIPData")
             search-text
             search-icon
 </template>
@@ -7,7 +7,7 @@
 <script>
 import SearchIcon from '../atoms/SearchIcon.vue'
 import SearchText from '../atoms/SearchText.vue'
-import axios from 'axios'
+import apiMixin from '../../mixins/api'
 
 export default {
   name: 'search-bar',
@@ -15,21 +15,7 @@ export default {
     SearchIcon,
     SearchText
   },
-  methods: {
-    onSubmit() {
-      axios
-        .get(
-          `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.VUE_APP_APIKEY}&ipAddress=${this.$store.state.searchText}&domain=${this.$store.state.searchText}`
-        )
-        .then(({ data }) => {
-          this.$store.dispatch('data/setData', { data })
-          console.log({ ...this.$store.state.data })
-        })
-    }
-  },
-  mounted() {
-    this.onSubmit()
-  }
+  mixins: [apiMixin]
 }
 </script>
 
