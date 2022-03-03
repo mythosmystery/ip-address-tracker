@@ -27,6 +27,7 @@ export default {
 <style lang="scss" scoped>
 #break {
   height: 5rem;
+  margin: 0 1rem;
   border-right: 1px solid lightgray;
   @media (max-width: 980px) {
     border: none;
@@ -34,9 +35,9 @@ export default {
 }
 #info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 5rem 0 5rem;
+  padding: 0 2rem;
   position: relative;
   background: white;
   border-radius: 20px;
@@ -48,7 +49,7 @@ export default {
     flex-direction: column;
     width: 85%;
     height: 100%;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
   }
 }
 </style>
