@@ -28,6 +28,7 @@ export default {
       return this.$store.state.data.showMarker
     },
     center() {
+      //if theres no data default to bay area
       return this.showMarker ? this.$store.state.data.coords : [37.77, -122.41]
     },
     zoom() {
