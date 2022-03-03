@@ -23,4 +23,8 @@ button {
   padding: 1rem 1.25rem;
   border-radius: 0 15px 15px 0;
 }
+#icon-container:hover {
+  background: hsl(0, 0%, 25%);
+  cursor: pointer;
+}
 </style>
