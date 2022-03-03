@@ -12,7 +12,7 @@ const actions = {
     commit('setData', {
       coords: [data.location.lat, data.location.lng],
       ip: data.ip,
-      location: `${data.location.city}, ${data.location.region}, ${data.location.postalCode}`,
+      location: getLocationString(data.location),
       timezone: `UTC ${data.location.timezone}`,
       isp: data.isp,
       showMarker: true
@@ -29,6 +29,12 @@ const mutations = {
     state.isp = payload.isp
     state.showMarker = payload.showMarker
   }
+}
+
+const getLocationString = location => {
+  return location.postalCode
+    ? `${location.city}, ${location.region}, ${location.postalCode}`
+    : `${location.city}, ${location.region}`
 }
 
 export default {
