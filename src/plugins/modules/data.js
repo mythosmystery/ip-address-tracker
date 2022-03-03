@@ -4,7 +4,8 @@ const state = () => ({
   location: '',
   timezone: '',
   isp: '',
-  showMarker: false
+  showMarker: false,
+  isError: false
 })
 
 const actions = {
@@ -17,6 +18,9 @@ const actions = {
       isp: data.isp,
       showMarker: true
     })
+  },
+  setError({ commit }) {
+    commit('setError')
   }
 }
 
@@ -28,6 +32,10 @@ const mutations = {
     state.timezone = payload.timezone
     state.isp = payload.isp
     state.showMarker = payload.showMarker
+  },
+  setError(state) {
+    state.isError = true
+    state.showMarker = false
   }
 }
 

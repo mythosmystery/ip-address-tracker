@@ -1,5 +1,5 @@
 <template lang="pug">
-    input(type="text" v-model="search" placeholder="Search for any IP address or domain")
+      input(type="text" v-model="search" placeholder="Search for any IP address or domain")
 </template>
 
 <script>
