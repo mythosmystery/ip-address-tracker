@@ -32,6 +32,7 @@ const mutations = {
     state.timezone = payload.timezone
     state.isp = payload.isp
     state.showMarker = payload.showMarker
+    state.isError = false
   },
   setError(state) {
     state.isError = true
